@@ -62,60 +62,60 @@
       <h2 class="filter-country__title">Фильтрация по странам:</h2>
       <button class="filter-country__close"></button>
       <ul class="continent-list">
-        <li class="continent-item"><a href="#">Европа</a></li>
+        <li class="continent-item continent-item__active"><a href="#">Европа</a></li>
         <li class="continent-item"><a href="#">Азия</a></li>
         <li class="continent-item"><a href="#">Америка</a></li>
         <li class="continent-item"><a href="#">Острова</a></li>
       </ul>
       <table class="alphavite">
         <tr>
-          <button>А</button>
-          <button>Б</button>
-          <button>В</button>
-          <button>Г</button>
-          <button>Д</button>
+          <td><button>А</button></td>
+          <td><button>Б</button></td>
+          <td><button>В</button></td>
+          <td><button>Г</button></td>
+          <td><button>Д</button></td>
         </tr>
         <tr>
-          <button>Е</button>
-          <button>З</button>
-          <button>И</button>
-          <button>К</button>
-          <button>Л</button>
+          <td><button>Е</button></td>
+          <td><button>З</button></td>
+          <td><button>И</button></td>
+          <td><button>К</button></td>
+          <td><button>Л</button></td>
         </tr>
         <tr>
-          <button>М</button>
-          <button>Н</button>
-          <button>О</button>
-          <button>П</button>
-          <button>Р</button>
+          <td><button>М</button></td>
+          <td><button>Н</button></td>
+          <td><button>О</button></td>
+          <td><button>П</button></td>
+          <td><button>Р</button></td>
         </tr>
         <tr>
-          <button>С</button>
-          <button>Т</button>
-          <button>У</button>
-          <button>Ф</button>
-          <button>Х</button>
+          <td><button>С</button></td>
+          <td><button>Т</button></td>
+          <td><button>У</button></td>
+          <td><button>Ф</button></td>
+          <td><button>Х</button></td>
         </tr>
         <tr>
-          <button>Ч</button>
-          <button>Ш</button>
-          <button>Э</button>
-          <button>Ю</button>
-          <button>Я</button>
+          <td><button>Ч</button></td>
+          <td><button>Ш</button></td>
+          <td><button>Э</button></td>
+          <td><button>Ю</button></td>
+          <td><button>Я</button></td>
         </tr>
       </table>
       <ul class="filter-country__search-country__list">
-        <li class="serach-country__item"><a href="#">Австралия</a></li>
-        <li class="serach-country__item"><a href="#">Австрия</a></li>
-        <li class="serach-country__item"><a href="#">Азербайджан</a></li>
-        <li class="serach-country__item"><a href="#">Албания</a></li>
-        <li class="serach-country__item"><a href="#">Алжир</a></li>
-        <li class="serach-country__item"><a href="#">Ангола</a></li>
-        <li class="serach-country__item"><a href="#">Андорра</a></li>
-        <li class="serach-country__item"><a href="#">Антигуа и Барбуда</a></li>
-        <li class="serach-country__item"><a href="#">Аргентина</a></li>
-        <li class="serach-country__item"><a href="#">Армения</a></li>
-        <li class="serach-country__item"><a href="#">Афганистан</a></li>
+        <li class="filter-country__search-country__item"><a href="#">Австралия</a></li>
+        <li class="filter-country__search-country__item"><a href="#">Австрия</a></li>
+        <li class="filter-country__search-country__item"><a href="#">Азербайджан</a></li>
+        <li class="filter-country__search-country__item"><a href="#">Албания</a></li>
+        <li class="filter-country__search-country__item"><a href="#">Алжир</a></li>
+        <li class="filter-country__search-country__item"><a href="#">Ангола</a></li>
+        <li class="filter-country__search-country__item"><a href="#">Андорра</a></li>
+        <li class="filter-country__search-country__item"><a href="#">Антигуа и Барбуда</a></li>
+        <li class="filter-country__search-country__item"><a href="#">Аргентина</a></li>
+        <li class="filter-country__search-country__item"><a href="#">Армения</a></li>
+        <li class="filter-country__search-country__item"><a href="#">Афганистан</a></li>
       </ul>
       <button class="filter-close">Свернуть</button>
       <section class="main-filter-country">
@@ -449,7 +449,7 @@
               </div>
             </div>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="filter-traveler__submit" type="submit">Показать</button>
         </form>
       </section>
       <section class="catalog__traveler">
@@ -459,17 +459,20 @@
             <h2 class="traveler-card__name">Таня Фирсова</h2>
             <p class="traveler-card__hashtags">#ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи</p>
             <a href="№" class="traveler-card__invite">Позвать!</a><strong class="traveler-card__amount-likes">1,5 М</strong>
+            <p class="traveler-card__want-invite">Хочет посетить:</p>
             <ul class="traveler-card__country-list">
               <li class="traveler-card__country-item"><img src="img/country/icons/srilanka2.svg" alt="Шри-Ланка">Шри-Ланка</li>
               <li class="traveler-card__country-item"><img src="img/country/icons/thailand.svg" alt="Таиланд">Таиланд</li>
               <li class="traveler-card__country-item"><img src="img/country/icons/seychelles.svg" alt="Сейшелы">Сейшелы</li>
             </ul>
+            <p class="traveler-card__transport">транспорт:</p>
             <ul class="traveler-card__movement-list">
               <li class="traveler-card__movement-item"><img src="img/movement/plane-1.svg" alt="Самолёт"></li>
               <li class="traveler-card__movement-item"><img src="img/movement/auto-0.svg" alt="Автомобиль"></li>
               <li class="traveler-card__movement-item"><img src="img/movement/bicycle-0.svg" alt="Велосипед"></li>
               <li class="traveler-card__movement-item"><img src="img/movement/run-0.svg" alt="Пешком"></li>
             </ul>
+            <p class="traveler-card__level">левел:</p>
             <div class="traveler-card__level">
               <strong>99</strong>
               <p>level</p>
@@ -480,37 +483,43 @@
             <h2 class="traveler-card__name">Петя Демин</h2>
             <p class="traveler-card__hashtags">#бургер #бар #футбол #концерт #крафт</p>
             <a href="№" class="traveler-card__invite">Позвать!</a><strong class="traveler-card__amount-likes">1500</strong>
+            <p class="traveler-card__want-invite">Хочет посетить:</p>
             <ul class="traveler-card__country-list">
               <li class="traveler-card__country-item"><img src="img/country/icons/belgium.svg" alt="Бельгия">Бельгия</li>
               <li class="traveler-card__country-item"><img src="img/country/icons/czech.svg" alt="Чехия">Чехия</li>
             </ul>
+            <p class="traveler-card__transport">транспорт:</p>
             <ul class="traveler-card__movement-list">
               <li class="traveler-card__movement-item"><img src="img/movement/plane-1.svg" alt="Самолёт"></li>
               <li class="traveler-card__movement-item"><img src="img/movement/auto-1.svg" alt="Автомобиль"></li>
               <li class="traveler-card__movement-item"><img src="img/movement/bicycle-0.svg" alt="Велосипед"></li>
               <li class="traveler-card__movement-item"><img src="img/movement/run-1.svg" alt="Пешком"></li>
             </ul>
+            <p class="traveler-card__level">левел:</p>
             <div class="traveler-card__level">
               <strong>80</strong>
               <p>level</p>
             </div>
           </li>
           <li class="catalot-card">
-            <img src="img/people/mark.jpg" alt="Марк Смолов">
+            <img src="img/people/" alt="Марк Смолов">
             <h2 class="traveler-card__name">Марк Смолов</h2>
             <p class="traveler-card__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
             <a href="#" class="traveler-card__invite">Позвать!</a><strong class="traveler-card__amount-likes">170</strong>
+            <p class="traveler-card__want-invite">хочет посетить:</p>
             <ul class="traveler-card__country-list">
               <li class="traveler-card__country-item"><img src="img/country/icons/usa.svg" alt="США">США</li>
               <li class="traveler-card__country-item"><img src="img/country/icons/australia.svg" alt="Австралия">Австралия</li>
               <li class="traveler-card__country-item"><img src="img/country/icons/dominica.svg" alt="Доминика">Доминика</li>
             </ul>
+            <p class="traveler-card__transport">транспорт:</p>
             <ul class="traveler-card__movement-list">
               <li class="traveler-card__movement-item"><img src="img/movement/plane-1.svg" alt="Самолёт"></li>
               <li class="traveler-card__movement-item"><img src="img/movement/auto-0.svg" alt="Автомобиль"></li>
               <li class="traveler-card__movement-item"><img src="img/movement/bicycle-1.svg" alt="Велосипед"></li>
               <li class="traveler-card__movement-item"><img src="img/movement/run-0.svg" alt="Пешком"></li>
             </ul>
+            <p class="traveler-card__level">левел:</p>
             <div class="traveler-card__level">
               <strong>25</strong>
               <p>level</p>
@@ -521,17 +530,20 @@
             <h2 class="traveler-card__name">Лариса РОговая</h2>
             <p class="traveler-card__hashtags">#образование #карьера #учеба #линкедин</p>
             <a href="#" class="traveler-card__invite">Позвать!</a><strong class="traveler-card__amount-likes">23</strong>
+            <p class="traveler-card__want-invite">хочет посетить:</p>
             <ul class="traveler-card__country-list">
               <li class="traveler-card__country-item"><img src="img/country/icons/united-kingdom.svg" alt="Великобритания">Великобритания</li>
               <li class="traveler-card__country-item"><img src="img/country/icons/germany.svg" alt="Германия">Германия</li>
             </ul>
+            <p class="traveler-card__transport">транспорт:</p>
             <ul class="traveler-card__movement-list">
               <li class="traveler-card__movement-item"><img src="img/movement/plane-1.svg" alt="Самолёт"></li>
               <li class="traveler-card__movement-item"><img src="img/movement/auto-1.svg" alt="Автомобиль"></li>
               <li class="traveler-card__movement-item"><img src="img/movement/bicycle-0.svg" alt="Велосипед"></li>
               <li class="traveler-card__movement-item"><img src="img/movement/run-0.svg" alt="Пешком"></li>
             </ul>
-            <div class="traveler-card__level">
+            <p class="traveler-card__level">левел:</p>
+            <div class="traveler-card__block-level">
               <strong>50</strong>
               <p>level</p>
             </div>
