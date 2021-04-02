@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header class="page-header">
@@ -17,8 +18,8 @@
         <nav class="main-navigation">
           <ul class="drop-down__main-navigation__list">
             <li class="drop-down__main-navigation__item"><a href="#">О сервисе</a></li>
-            <li class="drop-down__main-navigation__item"><a href="№">Направления</a></li>
-            <li class="drop-down__main-navigation__item"><a href="№">Попутчики</a></li>
+            <li class="drop-down__main-navigation__item"><a href="form.html">Направления</a></li>
+            <li class="drop-down__main-navigation__item"><a href="catalog.html">Попутчики</a></li>
           </ul>
         </nav>
         <button class="drop-down__mobile-authorization">Авторизация</button>
@@ -33,18 +34,20 @@
         </ul>
       </section>
       <section class="main-header">
-        <div class="main-header__logo">
-          <a class="mobile-logo" href="#"><img src="img/logotypes/mobile-logo.svg" alt="Логотип"></a>
-          <a class="tablet-logo" href="#"><img src="img/logotypes/logo.svg" alt="Логотип"></a>
+        <div class="main-header__top">
+          <div class="main-header__logo">
+            <a class="mobile-logo" href="#"><img src="img/logotypes/mobile-logo.svg" alt="Логотип"></a>
+            <a class="tablet-logo" href="#"><img src="img/logotypes/logo.svg" alt="Логотип"></a>
+          </div>
+          <button class="open-drop-down"></button>
         </div>
         <nav class="main-header__navigation">
           <ul class="main-header__navigation-list">
             <li class="main-header__navigation-item"><a href="#">О сервисе</a></li>
-            <li class="main-header__navigation-item"><a href="#">Направления</a></li>
-            <li class="main-header__navigation-item"><a href="#">Попутчики</a></li>
+            <li class="main-header__navigation-item"><a href="form.html">Направления</a></li>
+            <li class="main-header__navigation-item"><a href="catalog.html">Попутчики</a></li>
           </ul>
         </nav>
-        <button class="open-drop-down"></button>
         <ul class="main-header__user-menu">
           <li class="main-header__user-menu-item"><a href="#">phone</a></li>
           <li class="main-header__user-menu-item"><a href="#">email</a></li>

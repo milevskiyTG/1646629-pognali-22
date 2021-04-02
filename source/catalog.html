@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header class="page-header">
@@ -32,14 +34,18 @@
         </ul>
       </section>
       <section class="main-header">
-        <div class="main-header__logo">
-          <a class="mobile-logo" href="#"><img src="img/logotypes/mobile-logo.svg" alt="Логотип"></a>
-          <a class="tablet-logo" href="#"><img src="img/logotypes/logo.svg" alt="Логотип"></a>
+        <div class="main-header__top">
+          <div class="main-header__logo">
+            <a class="mobile-logo" href="#"><img src="img/logotypes/mobile-logo.svg" alt="Логотип"></a>
+            <a class="tablet-logo" href="#"><img src="img/logotypes/logo.svg" alt="Логотип"></a>
+          </div>
+          <button class="open-drop-down"></button>
+          <h1 class="main-header__subtitle">Попутчики</h1>
         </div>
         <nav class="main-header__navigation">
           <ul class="main-header__navigation-list">
-            <li class="main-header__navigation-item"><a href="#">О сервисе</a></li>
-            <li class="main-header__navigation-item"><a href="#">Направления</a></li>
+            <li class="main-header__navigation-item"><a href="index.html">О сервисе</a></li>
+            <li class="main-header__navigation-item"><a href="form.html">Направления</a></li>
             <li class="main-header__navigation-item"><a href="#">Попутчики</a></li>
           </ul>
         </nav>
@@ -50,7 +56,6 @@
           <li class="main-header__user-menu-item"><button>Авторизация</button></li>
         </ul>
         <button class="main-header__tablet-authorization">Авторизация</button>
-        <h1 class="main-header__subtitle">Попутчики</h1>
       </section>
     </header>
     <main class="main-content__catalog">
