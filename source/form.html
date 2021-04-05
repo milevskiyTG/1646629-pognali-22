@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+
   </head>
   <body>
     <header class="page-header">
@@ -17,9 +19,15 @@
         <button class="drop-down__tablet-authorization">Авторизация</button>
         <nav class="main-navigation">
           <ul class="drop-down__main-navigation__list">
+
             <li class="drop-down__main-navigation__item"><a href="index.html">О сервисе</a></li>
             <li class="drop-down__main-navigation__item"><a href="#">Направления</a></li>
             <li class="drop-down__main-navigation__item"><a href="catalog.html">Попутчики</a></li>
+
+            <li class="drop-down__main-navigation__item"><a href="#">О сервисе</a></li>
+            <li class="drop-down__main-navigation__item"><a href="№">Направления</a></li>
+            <li class="drop-down__main-navigation__item"><a href="№">Попутчики</a></li>
+
           </ul>
         </nav>
         <button class="drop-down__mobile-authorization">Авторизация</button>
@@ -34,6 +42,7 @@
         </ul>
       </section>
       <section class="main-header">
+
         <div class="main-header__top">
           <div class="main-header__logo">
             <a class="mobile-logo" href="#"><img src="img/logotypes/mobile-logo.svg" alt="Логотип"></a>
@@ -47,6 +56,17 @@
             <li class="main-header__navigation-item"><a href="index.html">О сервисе</a></li>
             <li class="main-header__navigation-item"><a href="#">Направления</a></li>
             <li class="main-header__navigation-item"><a href="catalog.html">Попутчики</a></li>
+
+        <div class="main-header__logo">
+          <a class="mobile-logo" href="#"><img src="img/logotypes/mobile-logo.svg" alt="Логотип"></a>
+          <a class="tablet-logo" href="#"><img src="img/logotypes/logo.svg" alt="Логотип"></a>
+        </div>
+        <nav class="main-header__navigation">
+          <ul class="main-header__navigation-list">
+            <li class="main-header__navigation-item"><a href="#">О сервисе</a></li>
+            <li class="main-header__navigation-item"><a href="#">Направления</a></li>
+            <li class="main-header__navigation-item"><a href="#">Попутчики</a></li>
+
           </ul>
         </nav>
         <button class="open-drop-down"></button>
@@ -56,6 +76,9 @@
           <li class="main-header__user-menu-item"><button>Авторизация</button></li>
         </ul>
         <button class="main-header__tablet-authorization">Авторизация</button>
+
+        <h1 class="main-header__subtitle">Направления</h1>
+
       </section>
     </header>
     <main class="main-content__form">
@@ -84,13 +107,21 @@
         <h2 class="plans__title">Мои планы:</h2>
         <ul class="plans__list">
           <li class="plans__card">
+
             <h3 class="plans__card_title"><p>1.</p> Франция, Италия</h3>
+
+            <h3 class="plans__card_title">1. Франция, Италия</h3>
+
             <p class="amount-traveler">3 попутчика</p>
             <p class="date">26 мар - 29 мар</p>
             <button class="change-plan">Изменить</button>
           </li>
           <li class="plans__card">
+
             <h3 class="plans__card_title"><p>2.</p> Таиланд, Индонезия</h3>
+
+            <h3 class="plans__card_title">2. Таиланд, Индонезия</h3>
+
             <p class="amount-traveler">1 попутчик</p>
             <p class="date">1 июл - 15 июл</p>
             <button class="change-plan">Изменить</button>
@@ -117,7 +148,11 @@
                   <button class="quality-min"></button>
                   <label ><input type="number" name="quantity" value="2"></label>
                   <button class="quality-plus"></button>
+
                   <p>чел.</p>
+
+                  чел.
+
               </span>
             </div>
             <label class="children"><input type="checkbox" name="children"> Можно с детьми</label>
@@ -127,14 +162,22 @@
                   <button class="quality-min"></button>
                   <label ><input type="number" name="quantity" value="3"></label>
                   <button class="quality-plus"></button>
+
                   <p>дн.</p>
+
+                  дн.
+
               </span>
             </div>
             <table class="calendar">
               <button class="prev-mounth"></button>
               <h2 class="calendar__title">Март 2019</h2>
               <button class="next-mounth"></button>
+
               <tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th class="weekend">сб</th><th class="weekend">вс</th></tr>
+
+              <tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr>
+
               <tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>1</td></tr>
               <tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr>
               <tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
@@ -171,13 +214,17 @@
               <input type="text" name="plus-country" value="Добавить страну">
               <button class="change-country__plus"></button>
             </label>
+
             <a href="#" class="next-step">Следующий шаг</a>
             <a href="#" class="prev-step">На шаг назад</a>
+
+
             <div class="search-country">
               <h3 class="search-country__title">Выберите страну</h3>
               <button class="search-country__close"></button>
               <table class="alphavite">
                 <tr>
+
                   <td><button>А</button></td>
                   <td><button>Б</button></td>
                   <td><button>В</button></td>
@@ -225,6 +272,55 @@
                 <li class="search-country__item"><a href="#">Аргентина</a></li>
                 <li class="search-country__item"><a href="#">Армения</a></li>
                 <li class="search-country__item"><a href="#">Афганистан</a></li>
+
+                  <button>А</button>
+                  <button>Б</button>
+                  <button>В</button>
+                  <button>Г</button>
+                  <button>Д</button>
+                </tr>
+                <tr>
+                  <button>Е</button>
+                  <button>З</button>
+                  <button>И</button>
+                  <button>К</button>
+                  <button>Л</button>
+                </tr>
+                <tr>
+                  <button>М</button>
+                  <button>Н</button>
+                  <button>О</button>
+                  <button>П</button>
+                  <button>Р</button>
+                </tr>
+                <tr>
+                  <button>С</button>
+                  <button>Т</button>
+                  <button>У</button>
+                  <button>Ф</button>
+                  <button>Х</button>
+                </tr>
+                <tr>
+                  <button>Ч</button>
+                  <button>Ш</button>
+                  <button>Э</button>
+                  <button>Ю</button>
+                  <button>Я</button>
+                </tr>
+              </table>
+              <ul class="search-country__list">
+                <li class="serach-country__item"><button>Австралия</button></li>
+                <li class="serach-country__item"><button>Австрия</button></li>
+                <li class="serach-country__item"><button>Азербайджан</button></li>
+                <li class="serach-country__item"><button>Албания</button></li>
+                <li class="serach-country__item"><button>Алжир</button></li>
+                <li class="serach-country__item"><button>Ангола</button></li>
+                <li class="serach-country__item"><button>Андорра</button></li>
+                <li class="serach-country__item"><button>Антигуа и Барбуда</button></li>
+                <li class="serach-country__item"><button>Аргентина</button></li>
+                <li class="serach-country__item"><button>Армения</button></li>
+                <li class="serach-country__item"><button>Афганистан</button></li>
+
               </ul>
             </div>
             <a href="#" class="next-step">Следующий шаг</a>
@@ -249,7 +345,11 @@
               Чехия
               <textarea name="description-enterainment" id="" cols="30" rows="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
             </label>
+
             <button class="add-plan__submit" type="submit">Отправить</button>
+
+            <button type="submit">Отправить</button>
+
             <a href="#" class="prev-step">На шаг назад</a>
           </section>
         </form>
