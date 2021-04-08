@@ -46,12 +46,12 @@
   line-height: 18px;
   color:@basic_blue;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   width: 270px;
   height: 80px;
   border-radius: 10px;
   margin: 0 auto;
+  margin-top: -80px;
   .travel-plan__number{
     color:@basic_white;
   }
@@ -125,11 +125,12 @@
   display: flex;
   justify-content: center;
   background: @basic_blue;
-  height: 285px;
+  height: 365px;
   margin-top: -40px;
 }
 .feedback-text{
-  margin-top: 50px;
+  margin-top: 48px;
+  margin-bottom: 18px;
   margin-left: -62px;
 }
 .author{
@@ -140,12 +141,15 @@
   list-style: none;
   li:first-child{
     background-color: #FF8D30;
+    height: 160px;
   }
   li:nth-child(2){
     background-color: #FFA530;
+    height: 160px;
   }
   li:nth-child(3){
     background-color: #FFBD30;
+    height: 160px;
   }
   li:last-child{
     background-color: #FFD74B;
@@ -153,13 +157,21 @@
 }
 .travel-plan__wrapper{
   height: 266px;
-  background-color: @basic_blue_light;
-  border:1px solid @basic_blue_light;
+  background-color: @bg_blue;
 }
 .travel-plan{
   width: 270px;
   margin: 0 auto;
-  margin-top: -80px;
+  position: relative;
+  top: -80px;
+}
+.travel-plan__descr{
+  margin-left: 24px;
+  margin-top: 22px;
+}
+.travel-plan__number{
+  margin-right: 21px;
+  margin-top: 22px;
 }
 @media (min-width: 320px){
   .main-header__navigation-list{
