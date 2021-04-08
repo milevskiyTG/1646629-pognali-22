@@ -8,9 +8,6 @@
     text-decoration: none;
   }
 }
-.main-header__top{
-  background-color: @bg_header;
-}
 .main-header__user-menu-item button,
 .main-header__tablet-authorization{
   font-family: "blogger-bold","Arial",sans-serif;
@@ -25,8 +22,10 @@
   font-size: 36px;
   line-height: 40px;
   color:@basic_white;
+  text-align: center;
+  margin-top: 56px;
 }
-.main-header q{
+.feedback-text{
   font-family: "blogger-light","Arial",sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -40,15 +39,25 @@
   line-height: 22px;
   color:@basic_white;
 }
-.travel-plane__item{
+.travel-plan__item{
   font-family: "blogger-bold","Arial",sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   color:@basic_blue;
-  h2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 270px;
+  height: 80px;
+  border-radius: 10px;
+  margin: 0 auto;
+  .travel-plan__number{
     color:@basic_white;
   }
+}
+.travel-plan__descr{
+  margin-left: 20px;
 }
 .main-header__subtitle{
   font-family: "blogger-bold","Arial",sans-serif;
@@ -56,4 +65,107 @@
   font-size: 36px;
   line-height: 36px;
   color:@basic_white;
+}
+.main-header__top{
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 25px 0 25px;
+}
+.main-header__top-title{
+  height: 476px;
+  background: url(/source/img/traveller-illustration-mobile.png) no-repeat 62.5% 100%, url(/source/img/globe-back-mobile.jpg);
+}
+.open-drop-down{
+  width: 25px;
+  height: 11px;
+  margin-right: 1px;
+  margin-top: 4px;
+  position: relative;
+  background: transparent;
+  border: none;
+  &::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: @basic_white;
+    left: 0;
+    bottom: 0;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: @basic_white;
+    left: 0;
+    top: 0;
+  }
+}
+.main-header__user-menu{
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: -20px;
+  margin-left: 1px;
+}
+.main-header__user-menu-item button{
+  text-transform: uppercase;
+  width: 190px;
+  height: 40px;
+  background-color: @basic_yellow;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  font-size: 17px;
+}
+.feedback-wrapper{
+  display: flex;
+  justify-content: center;
+  background: @basic_blue;
+  height: 285px;
+  margin-top: -40px;
+}
+.feedback-text{
+  margin-top: 50px;
+  margin-left: -62px;
+}
+.author{
+  margin-left: -62px;
+}
+.travel-plan{
+  padding: 0;
+  list-style: none;
+  li:first-child{
+    background-color: #FF8D30;
+  }
+  li:nth-child(2){
+    background-color: #FFA530;
+  }
+  li:nth-child(3){
+    background-color: #FFBD30;
+  }
+  li:last-child{
+    background-color: #FFD74B;
+  }
+}
+.travel-plan__wrapper{
+  height: 266px;
+  background-color: @basic_blue_light;
+  border:1px solid @basic_blue_light;
+}
+.travel-plan{
+  width: 270px;
+  margin: 0 auto;
+  margin-top: -80px;
+}
+@media (min-width: 320px){
+  .main-header__navigation-list{
+    display: none;
+  }
+  .main-header__tablet-authorization{
+    display: none;
+  }
 }
