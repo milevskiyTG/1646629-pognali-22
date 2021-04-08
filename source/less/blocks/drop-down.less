@@ -3,6 +3,7 @@
   font-weight: 500;
   font-size: 30px;
   line-height: 35px;
+  text-transform: uppercase;
   a{
     text-decoration: none;
     color:@basic_blue;
@@ -21,8 +22,117 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
+  margin-left: 27px;
   a{
     color:@basic_blue;
     text-decoration: none;
+  }
+  &:last-child{
+    margin-top: 26px;
+  }
+}
+.drop-down{
+  height: 568px;
+  display: none;
+}
+.drop-down__top{
+  display: flex;
+  justify-content: space-between;
+  margin: 27px 27px 0 25px;
+}
+.drop-down__close{
+  position: relative;
+  background-color: transparent;
+  border:none;
+  cursor: pointer;
+  &::after{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: @grey;
+    transform: rotate(45deg);
+    top: 7px;
+    left: -9px;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: @grey;
+    transform: rotate(-45deg);
+    top: 7px;
+    left: -9px;
+  }
+}
+.drop-down__main-navigation__list{
+  padding: 0;
+  margin-top: 72px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.drop-down__mobile-authorization{
+  text-transform: uppercase;
+  width: 270px;
+  height: 50px;
+  margin-top: 53px;
+  border: none;
+  border-radius: 25px;
+  background-color: @basic_yellow;
+}
+.drop-down__contact-list__wrapper{
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+.drop-down__contact-list{
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.drop-down__phone-link,
+.drop-down__email-link{
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 45px;
+    top: -15px;
+    left: -61px;
+  }
+}
+.drop-down__phone-link::before{
+  background: url(/source/img/phone.svg) no-repeat;
+}
+.drop-down__email-link::before{
+  background: url(/source/img/email.svg) no-repeat;
+}
+.drop-down__social-list__wrapper{
+  display: flex;
+  justify-content: center;
+}
+.drop-down__social-list{
+  padding: 0;
+  width: 105px;
+  margin-top: 37px;
+  margin-left: 5px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 320px){
+  .tablet-logo{
+    display: none;
+  }
+  .drop-down__tablet-authorization{
+    display: none;
   }
 }
