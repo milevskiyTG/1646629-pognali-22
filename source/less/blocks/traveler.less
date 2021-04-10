@@ -1,5 +1,14 @@
 .traveler{
-  background-color: @bg_blue;
+  background:url(/source/img/smolov-back-desktop.png) no-repeat 85% 90px,url(/source/img/back.svg) no-repeat 0 90px,url(/source/img/rogovaya-back-desktop.png) no-repeat 0 363px,@bg_blue;
+  min-height: 1351px;
+  margin-top: -54px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
 }
 .traveler__title{
   font-family: "blogger","Arial",sans-serif;
@@ -7,6 +16,10 @@
   font-size: 24px;
   line-height: 24px;
   color:@special_orange;
+  margin-top: 123px;
+  margin-bottom: 19px;
+  margin-left: -105px;
+  letter-spacing: 1px;
 }
 .traveler__description{
   font-family: "blogger","Arial",sans-serif;
@@ -14,22 +27,106 @@
   font-size: 16px;
   line-height: 22px;
   color:@basic_white;
-  strong{
-    font-weight: 700;
+  margin: 0;
+  margin-left: -5px;
+}
+.traveler__description-strong{
+  font-family: "blogger","Arial",sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color:@basic_white;
+  margin-top: 23px;
+  margin-left: -20px;
+  margin-bottom: 38px;
+  letter-spacing: 1px;
+}
+.traveler__list{
+  padding: 0;
+  margin: 0;
+  margin-top: 16px;
+  list-style: none;
+}
+.traveler__card{
+  width: 270px;
+  height: 428px;
+  position: relative;
+  background-color: @basic_white;
+  border-radius: 10px;
+  &:first-child{
+    margin-bottom: 9px;
   }
+}
+.traveler__photo{
+  border-radius: 10px;
 }
 .level{
   font-family: "blogger","Arial",sans-serif;
   color:@basic_white;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 17px;left: 17px;
   strong{
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
+    margin-top: 13px;
+    margin-left: -2px;
   }
   p{
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
+    margin: 0;
+    margin-left: -2px;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      background-color: @basic_white;
+      opacity: 0.3;
+      left: -3px;
+      top: -2.5px;
+    }
+  }
+}
+.level.tanya{
+  background: url(/source/img/circle-tanya.svg);
+}
+.level.petya{
+  background: url(/source/img/circle-petya.svg);
+}
+.traveler__country-list{
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: -15px;
+}
+.traveler__country-item{
+  &:not(:last-child){
+    margin-right: 20px;
+  }
+}
+.movement-list{
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 120px;
+  height: 25px;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 auto;
+  li:first-child{
+    margin-right: 7px;
+    margin-left: 2px;
   }
 }
 .traveler-name{
@@ -38,6 +135,9 @@
   font-size: 21px;
   line-height: 21px;
   color:@basic_blue_light;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 15px;
 }
 .hashtags{
   font-family: "blogger","Arial",sans-serif;
@@ -45,11 +145,29 @@
   font-size: 16px;
   line-height: 18px;
   color:@special_grey;
+  width: 188px;
+  white-space: wrap;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 16px;
 }
 .traveler__show-more{
+  width: 270px;
+  height: 62px;
+  border-radius: 10px;
+  background-color: @basic_yellow;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 29px;
+}
+.traveler__show-more__link{
   font-family: "blogger","Arial",sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   color:@basic_blue_light;
+  text-decoration: none;
+  margin-left: 23px;
+  margin-top: 22px;
+  letter-spacing: 1px;
 }
