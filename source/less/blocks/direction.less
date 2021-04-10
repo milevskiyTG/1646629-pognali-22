@@ -1,12 +1,21 @@
 .direction{
   background-color: @blue_light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 972px;
+  border-radius: 35px;
 }
 .direction__title{
   font-family: "blogger","Arial",sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
+  letter-spacing: 1px;
   color:@special_orange;
+  margin-left: -75px;
+  margin-top: 70px;
+  margin-bottom: 4px;
 }
 .direction__description{
   font-family: "blogger","Arial",sans-serif;
@@ -14,6 +23,8 @@
   font-size: 16px;
   line-height: 22px;
   color:@special_grey;
+  margin-left: -26px;
+  margin-bottom: 60px;
 }
 .country-name{
   font-family: "blogger","Arial",sans-serif;
@@ -21,6 +32,9 @@
   font-size: 21px;
   line-height: 21px;
   color:@basic_black;
+  margin-top: 25px;
+  margin-bottom: 2px;
+  letter-spacing: 1px;
 }
 .slogan{
   font-family: "blogger","Arial",sans-serif;
@@ -29,6 +43,8 @@
   line-height: 18px;
   color:@special_grey;
   opacity: 0.3;
+  margin: 0;
+  letter-spacing: 0.5px;
 }
 .amount-people{
   font-family: "blogger","Arial",sans-serif;
@@ -37,12 +53,69 @@
   line-height: 20px;
   color:@basic_blue;
   opacity: 0.3;
+  margin-right: 24px;
+  margin-top: 28px;
+  width: 42px;
+  text-align: left;
 }
-.direction__show-more{
+.direction__show-more__link{
   font-family: "blogger","Arial",sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   color:@basic_blue_light;
   text-decoration: none;
+  margin-left: 23px;
+  margin-top: 25px;
+  letter-spacing: 1px;
+}
+.direction__show-more{
+  width: 270px;
+  height: 62px;
+  border-radius: 10px;
+  background-color: @basic_yellow;
+  display: flex;
+  margin-top: 25px;
+}
+.direction__country-list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.direction__country-card{
+  width: 270px;
+  &:not(:last-child){
+    margin-bottom: 9px;
+  }
+}
+.country-title{
+  height: 89px;
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: @basic_white;
+  border-radius: 10px;
+  margin-top: -10px;
+}
+.direction__country-picture{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 110px;
+  width: 270px;
+}
+.direction__country-picture.tailand{
+  background-image: url(/source/img/country/thailand-mobile.jpg);
+}
+.direction__country-picture.france{
+  background-image: url(/source/img/country/france-mobile.jpg);
+}
+.direction__country-picture.czech{
+  background-image: url(/source/img/country/czech-mobile.jpg);
+}
+.country-info{
+  margin-left: 25px;
 }
