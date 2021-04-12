@@ -1,7 +1,10 @@
 .add-profile{
+  display: none;
   background-color: @blue_light;
   min-height: 503px;
   margin-top: -96px;
+  border-bottom-left-radius: 33px;
+  border-bottom-right-radius: 33px;
 }
 .add-profile__title{
   font-family: "blogger","Arial",sans-serif;
@@ -72,8 +75,31 @@
   color:@special_blue;
   border: none;
   margin-left: 8px;
-  margin-top: 16px;
-  letter-spacing: 0.5px;
+  margin-top: 17px;
+  letter-spacing: 0.7px;
+}
+.bussines-price{
+  height: 463px;
+  margin-top: -52px;
+  padding-top: 40px;
+}
+.bussines-price__wrapper{
+  height: 443px;
+  width: 270px;
+  background-color: @basic_white;
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 2px 8px 0 rgba(29, 46, 91, 0.14);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bussines-price__list{
+  padding: 0;
+  margin-right: 60px;
+  list-style: none;
 }
 .bussines-price__title{
   font-family: "blogger","Arial",sans-serif;
@@ -81,6 +107,10 @@
   font-size: 24px;
   line-height: 24px;
   color:@special_orange;
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 22px;
+  letter-spacing: 1px;
 }
 .bussines-price__item{
   font-family: "blogger","Arial",sans-serif;
@@ -88,6 +118,10 @@
   font-size: 16px;
   line-height: 22px;
   color:@special_grey;
+  margin-bottom: 22px;
+  span{
+    display: block;
+  }
 }
 .close-bussines-price{
   font-family: "blogger","Arial",sans-serif;
@@ -95,6 +129,11 @@
   font-size: 16px;
   line-height: 24px;
   color:@basic_blue_light;
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-top: 28px;
 }
 .add-profile__wrapper{
   width: 246px;
