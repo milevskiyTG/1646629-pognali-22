@@ -13,4 +13,53 @@
   line-height: 28px;
   color:@basic_blue_light;
   text-decoration: none;
+  width: 242px;
+  height: 41px;
+  border:3px solid @bg_blue;
+  border-radius: 10px;
+  margin-top: 32px;
+  padding-left: 22px;
+  padding-top: 15px;
+  letter-spacing: 0.6px;
+}
+.adress{
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-right: 1px;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: -2px;
+    left: -62px;
+    background-image: url(/source/img/icons/map_adress.svg);
+  }
+}
+.contact-adress__wrapper{
+  height: 172px;
+  margin-top: -30px;
+  padding-top: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: @basic_yellow;
+  border-bottom-left-radius: 33px;
+  border-bottom-right-radius: 33px;
+  z-index: 1;
+  position: relative;
+}
+.map{
+  width: 320px;
+  margin: 0 auto;
+  margin-top: -52px;
+  z-index: 0;
+  position: relative;
+}
+.map__point{
+  position: absolute;
+  top: 149px;
+  left: 158px;
 }

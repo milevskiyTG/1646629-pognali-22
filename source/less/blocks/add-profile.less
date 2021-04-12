@@ -1,10 +1,11 @@
 .add-profile{
-  display: none;
   background-color: @blue_light;
-  min-height: 503px;
+  min-height: 413px;
   margin-top: -96px;
   border-bottom-left-radius: 33px;
   border-bottom-right-radius: 33px;
+  position: relative;
+  z-index: 1;
 }
 .add-profile__title{
   font-family: "blogger","Arial",sans-serif;
@@ -24,7 +25,7 @@
     height: 100px;
     background: url(/source/img/rates.svg) no-repeat;
     top: -15px;
-    left: 145px;
+    left: 144px;
   }
 }
 .add-profile__price-item{
@@ -82,6 +83,8 @@
   height: 463px;
   margin-top: -52px;
   padding-top: 40px;
+  border-bottom-left-radius: 33px;
+  border-bottom-right-radius: 33px;
 }
 .bussines-price__wrapper{
   height: 443px;
@@ -95,6 +98,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  display: none;
 }
 .bussines-price__list{
   padding: 0;

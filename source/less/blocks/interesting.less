@@ -1,5 +1,12 @@
 .interesting{
   background-color: @bg_blue;
+  outline-offset: -1px;
+  height: 432px;
+  position: relative;
+  margin-top: -30px;
+  padding-top: 102px;
+  border-bottom-left-radius: 33px;
+  border-bottom-right-radius: 33px;
 }
 .interesting__title{
   font-family: "blogger","Arial",sans-serif;
@@ -7,15 +14,26 @@
   font-size: 24px;
   line-height: 24px;
   color:@special_orange;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1px;
 }
 .interesting__description{
   font-family: "blogger","Arial",sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
+  margin-top: 19px;
+  margin-left: -1px;
+  margin-bottom: 29px;
+  color: @basic_white;
+  text-align: center;
   a{
     color:@basic_yellow;
   }
+}
+.interesting__form{
+  display: flex;
 }
 .interesting__form input{
   font-family: "blogger","Arial",sans-serif;
@@ -23,21 +41,74 @@
   font-size: 18px;
   line-height: 18px;
   color:@special_grey;
+  width: 195px;
+  height: 60px;
+  padding-left: 25px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+}
+.interesting__submit{
+  width: 60px;
+  height: 62px;
+  border-radius: 10px;
+  border:none;
+  background-color: @basic_yellow;
+  margin-left: -10px;
 }
 .interesting__question{
   font-family: "blogger","Arial",sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  letter-spacing: 1%;
+  color: @basic_white;
+  letter-spacing: 0.1px;
+  text-align: center;
+  margin-top: 29px;
+  margin-bottom: 30px;
+}
+.interesting__wrapper-contact-list{
+  display: flex;
+  justify-content: center;
+}
+.interesting__contact-list{
+  padding: 0;
+  margin: 0;
+  margin-left: 29px;
+  list-style: none;
 }
 .interesting__contact-item{
   font-family: "blogger","Arial",sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  &:first-child{
+    margin-bottom: 23px;
+  }
   a{
     color:@basic_yellow;
     text-decoration: none;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      top: -15px;
+      left: -62px;
+    }
   }
+}
+.interesting__phone::before{
+  background-image: url(/source/img/icons/phone_int.svg);
+}
+.interesting__email::before{
+  background-image: url(/source/img/icons/email_int.svg);
+}
+.interesting__wrapper{
+  width: 270px;
+  height: 415px;
+  margin: 0 auto;
 }
