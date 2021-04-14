@@ -94,6 +94,10 @@
     margin-bottom: 9px;
   }
 }
+.direction__country-card picture{
+  position: relative;
+  z-index: -1;
+}
 .country-title{
   height: 89px;
   width: 270px;
@@ -102,7 +106,7 @@
   align-items: flex-start;
   background-color: @basic_white;
   border-radius: 10px;
-  margin-top: -10px;
+  margin-top: -14px;
 }
 .direction__country-picture{
   border-top-left-radius: 10px;
@@ -110,15 +114,110 @@
   height: 110px;
   width: 270px;
 }
-.direction__country-picture.tailand{
-  background-image: url(/source/img/country/thailand-mobile.jpg);
-}
-.direction__country-picture.france{
-  background-image: url(/source/img/country/france-mobile.jpg);
-}
-.direction__country-picture.czech{
-  background-image: url(/source/img/country/czech-mobile.jpg);
-}
 .country-info{
   margin-left: 25px;
+}
+@media (max-width: 767px){
+  .slogan.tab{
+    display: none;
+  }
+}
+@media (min-width: 768px){
+  .direction{
+    padding-bottom: 80px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+  .direction__wrapper{
+    width: 768px;
+    margin: auto;
+    background: url(/source/img/flags-back.png) no-repeat 440px 80px, url(/source/img/direction-back.png) no-repeat 40px 406px;
+  }
+  .direction__title{
+    font-size: 45px;
+    line-height: 45px;
+    margin-left: 74px;
+    margin-top: 73px;
+    letter-spacing: 2px;
+  }
+  .direction__description{
+    font-size: 28px;
+    line-height: 33px;
+    margin-top: 57px;
+    margin-left: 74px;
+    margin-bottom: 120px;
+  }
+  .direction__country-card{
+    display: flex;
+    flex-direction: row;
+    width: 616px;
+    height: 140px;
+  }
+  .direction__country-card picture{
+    order: 2;
+    position: relative;
+    z-index: -1;
+    margin-left: -374px;
+    margin-top: -15px;
+    width: 184px;
+  }
+  .direction__country-img{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .country-title{
+    order: 1;
+    width: 432px;
+    height: 140px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .country-name{
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: 5px;
+    margin-top: 29px;
+    margin-bottom: 3px;
+  }
+  .country-name.czech{
+    margin-bottom: 5px;
+  }
+  .slogan{
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 5px;
+  }
+  .slogan.mob{
+    display: none;
+  }
+  .amount-people{
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    position: relative;
+    top: -22px;
+    left: 60px;
+  }
+  .direction__country-list{
+    align-items: center;
+    position: relative;
+    z-index: 5;
+  }
+  .direction__show-more{
+    width: 618px;
+    height: 82px;
+    margin: 0 auto;
+    margin-top: 32px;
+    border-radius: 20px;
+  }
+  .direction__show-more__link{
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: 33px;
+    margin-top: 31px;
+  }
 }

@@ -1,6 +1,6 @@
 .traveler{
   background:url(/source/img/smolov-back-desktop.png) no-repeat 85% 90px,url(/source/img/back.svg) no-repeat 0 90px,url(/source/img/rogovaya-back-desktop.png) no-repeat 0 363px,@bg_blue;
-  min-height: 1351px;
+  height: 1351px;
   margin-top: -54px;
   position: relative;
   z-index: 1;
@@ -149,7 +149,6 @@
   font-size: 16px;
   line-height: 18px;
   color:@special_grey;
-  width: 188px;
   white-space: wrap;
   text-align: center;
   margin: 0 auto;
@@ -174,4 +173,106 @@
   margin-left: 23px;
   margin-top: 22px;
   letter-spacing: 1px;
+}
+@media (max-width: 767px){
+  .traveler__description.tab{
+    display: none;
+  }
+  .traveler__description-strong.tab{
+    display: none;
+  }
+  .hashtags.tab{
+    display: none;
+  }
+  .hashtags{
+    width: 188px;
+  }
+}
+@media (min-width: 768px){
+  .traveler__description.mob{
+    display: none;
+  }
+  .traveler__description-strong.mob{
+    display: none;
+  }
+  .traveler__description{
+    margin: 0;
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .traveler__description-strong{
+    font-size: 21px;
+    line-height: 24px;
+    margin-left: 0px;
+    margin-top: 39px;
+    margin-bottom: 45px;
+  }
+  .traveler{
+    position: relative;
+    z-index: 2;
+    padding-top: 195px;
+    height: 1115px;
+    background: @bg_blue;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+  .traveler__wrapper{
+    width: 621px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .traveler__title{
+    font-size: 45px;
+    line-height: 45px;
+    margin: 0;
+    margin-bottom: 55px;
+    letter-spacing: 2px;
+  }
+  .traveler__list{
+    display: flex;
+  }
+  .traveler__card{
+    width: 285px;
+    height: 483px;
+    border-radius: 20px;
+    &:first-child{
+      margin-right: 50px;
+    }
+  }
+  .traveler__photo{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .traveler-name{
+    font-size: 24px;
+    line-height: 22px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .traveler-name.petya{
+    margin-left: -17px;
+  }
+  .hashtags{
+    font-size: 20px;
+    line-height: 23px;
+    width: auto;
+    margin-bottom: 24px;
+  }
+  .hashtags.mob{
+    display: none;
+  }
+  .traveler__show-more{
+    width: 616px;
+    height: 80px;
+    border-radius: 20px;
+    margin-top: 72px;
+  }
+  .traveler__show-more__link{
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: 32px;
+    margin-top: 28px;
+  }
 }

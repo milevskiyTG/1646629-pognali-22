@@ -31,6 +31,13 @@
   letter-spacing: 1px;
   word-spacing: -1.5px;
 }
+.about-service__description.tab{
+  margin-right: 80px;
+  margin-bottom: 15px;
+}
+.about-service__strong-description.tab{
+  margin-bottom: 55px;
+}
 .about-service{
   width: 320px;
   margin: 0 auto;
@@ -45,7 +52,7 @@
 }
 .about-service__show-more{
   display: none;
-  width: 243px;
+  width: 241px;
   height: 51px;
   background: @basic_yellow;
   text-decoration: none;
@@ -54,17 +61,25 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
+  letter-spacing: 1px;
   border-radius: 20px;
   padding-top: 29px;
-  padding-left: 33px;
+  padding-left: 35px;
 }
 .wrapper-about-service{
   background-color: @bg_blue;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
 }
+
 @media (max-width: 767px){
   .about-service__show-more{
+    display: none;
+  }
+  .about-service__description.tab{
+    display: none;
+  }
+  .about-service__strong-description.tab{
     display: none;
   }
 }
@@ -98,5 +113,11 @@
     margin-left: -347px;
     font-size: 21px;
     line-height: 25px;
+  }
+  .about-service__description.mob{
+    display: none;
+  }
+  .about-service__strong-description.mob{
+    display: none;
   }
 }
