@@ -32,6 +32,8 @@
   word-spacing: -1.5px;
 }
 .about-service{
+  width: 320px;
+  margin: 0 auto;
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
   background: url(/source/img/about-mobile.png) no-repeat 67% 100%, url(/source/img/back.svg) no-repeat 0 15px,  @bg_blue;
@@ -41,10 +43,60 @@
   flex-direction: column;
   align-items: center;
 }
-
-
-@media (min-width: 320px){
+.about-service__show-more{
+  display: none;
+  width: 243px;
+  height: 51px;
+  background: @basic_yellow;
+  text-decoration: none;
+  color: @basic_blue_light;
+  font-family: "blogger","Arial",sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  border-radius: 20px;
+  padding-top: 29px;
+  padding-left: 33px;
+}
+.wrapper-about-service{
+  background-color: @bg_blue;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+@media (max-width: 767px){
   .about-service__show-more{
     display: none;
+  }
+}
+
+@media (min-width: 768px){
+  .about-service{
+    height: 795px;
+    width: 768px;
+    margin: 0 auto;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background: url(/source/img/img_tablet-service_.png) no-repeat 98% 158px, url(/source/img/back-tablet-m.svg) 49% 111px no-repeat;
+  }
+  .about-service__show-more{
+    display: inline-block;
+    margin-left: -347px;
+  }
+  .about-service__title{
+    margin-left: -308px;
+    margin-top: 152px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .about-service__description{
+    margin-left: -240px;
+    margin-top: 37px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .about-service__strong-description{
+    margin-left: -347px;
+    font-size: 21px;
+    line-height: 25px;
   }
 }
