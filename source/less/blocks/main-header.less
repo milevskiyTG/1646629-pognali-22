@@ -196,6 +196,7 @@
 @media (min-width: 768px){
   .main-header{
     height: 1120px;
+    background: @bg_blue;
   }
   .main-header__navigation{
     display: none;
@@ -230,8 +231,10 @@
     line-height: 55px;
   }
   .header__wrapper{
-    background: url(/source/img/traveller-illustration-tablet.svg) no-repeat 72% 74.5%  ,url(/source/img/globe-back-tablet.svg.jpg) no-repeat 0 100%, @bg_header;
+    background: url(/source/img/traveller-illustration-tablet.svg) no-repeat 72% 74.5%  ,url(/source/img/globe-back-tablet.svg.jpg) repeat-x 0 100%, @bg_header;
     height: 994px;
+    width: 768px;
+    margin: 0 auto;
   }
   .travel-plan{
     top: -138px;
