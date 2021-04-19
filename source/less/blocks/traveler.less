@@ -174,6 +174,8 @@
   margin-left: 23px;
   margin-top: 22px;
   letter-spacing: 1px;
+  width: 270px;
+  height: 62px;
 }
 @media (max-width: 767px){
   .traveler__description.tab{
@@ -280,5 +282,69 @@
     line-height: 24px;
     margin-left: 32px;
     margin-top: 28px;
+    width: 616px;
+    height: 80px;
+  }
+}
+@media (min-width: 1440px){
+  .traveler{
+    background: @bg_blue;
+    height: 701px;
+  }
+  .traveler__wrapper{
+    display: grid;
+    grid-template-areas: "title list"
+                         "description list"
+                         "descriptionstr list"
+                         "link list";
+    grid-template-rows: 100px 174px 132px auto;
+    grid-auto-columns: 1fr 1fr;
+    width: 1320px;
+    height: 601px;
+    margin: 0 auto;
+    background: url(/source/img/smolov-back-desktop.png) no-repeat 490px 83px,url(/source/img/back-img/rogovaya-back-desktop.png) no-repeat 130px 336px, url(/source/img/back-img/back-des.png) no-repeat 0 20px;
+  }
+  .traveler__title{
+    grid-area: title;
+    margin: 0;
+    margin-left: 69px;
+    margin-top: -14px;
+  }
+  .traveler__description{
+    grid-area: description;
+    margin: 0;
+    margin-left: 69px;
+    height: 132px;
+    margin-top: -14px;
+    white-space: nowrap;
+  }
+  .traveler__description-strong{
+    grid-area: descriptionstr;
+    margin: 0;
+    margin-left: 71px;
+    letter-spacing: 0.7px;
+    height: 48px;
+    margin-top: -14px;
+  }
+  .traveler__list{
+    grid-area: list;
+    width: 629px;
+    margin-left: 195px;
+    margin-top: -10px;
+    .traveler__card:first-child{
+      margin-right: 60px;
+    }
+  }
+  .traveler__show-more{
+    grid-area: link;
+    width: 280px;
+    height: 80px;
+    margin: 0;
+    margin-left: 69px;
+    margin-top: -14px;
+  }
+  .traveler__show-more__link{
+    width: 280px;
+    height: 80px;
   }
 }
