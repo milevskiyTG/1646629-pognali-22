@@ -56,10 +56,13 @@
           <div class="main-header__top-title">
             <div class="header__main-content-wrapper">
               <div class="main-header__top">
-                <div class="main-header__logo">
-                  <a class="mobile-logo" href="#"><img src="img/logotypes/mobile-logo.svg" alt="Логотип"></a>
-                  <a class="tablet-logo" href="#"><img src="img/logotypes/logo.svg" alt="Логотип"></a>
-                </div>
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/logotypes/logo-desktop-white.svg">
+                    <source media="(min-width: 768px)" srcset="img/logotypes/logo.svg">
+                    <img class="main-header__logo" src="img/logotypes/mobile-logo.svg" alt="Логотип">
+                  </picture>
+                </a>
                 <button class="open-drop-down"></button>
                 <button class="main-header__tablet-authorization">Авторизация</button>
               </div>
@@ -360,7 +363,9 @@
         </p>
         <form class="interesting__form" action="" method="get">
           <input type="email" name="email" placeholder="E-mail">
-          <button class="interesting__submit" type="submit"></button>
+          <button class="interesting__submit" type="submit">
+            <span>Регистрация</span>
+          </button>
         </form>
         <p class="interesting__question mob">
           Остались вопросы?<br>Мы с радостью на них ответим!
@@ -385,6 +390,7 @@
       </div>
       <div class="map">
         <picture>
+          <source media="(min-width: 1440px)" srcset="img/map_des.png">
           <source media="(min-width: 768px)" srcset="img/map_tab.png">
           <img class="picture-map" src="img/map.png" alt="Карта">
         </picture>
@@ -397,12 +403,13 @@
   </main>
   <footer class="page-footer">
     <div class="footer__wrapper">
-      <div class="footer-logo">
+      <a href="#">
         <picture>
+          <source media="(min-width: 1440px)" srcset="img/logotypes/logo-desktop-black.svg">
           <source media="(min-width: 768px)" srcset="img/logotypes/logo-black.svg">
-          <img src="img/logotypes/mobile-logo-black.svg" alt="Логотип">
+          <img class="footer-logo" src="img/logotypes/mobile-logo.svg" alt="Логотип">
         </picture>
-      </div>
+      </a>
       <ul class="footer__social-list">
         <li class="footer__social-item"><a href="#"><img src="/source/img/social/facebook-small.svg" alt="Facebook"
               width="11px" height="21px"></a></li>

@@ -69,6 +69,9 @@
   border:none;
   background-color: @basic_yellow;
   margin-left: -10px;
+  span{
+    display: none;
+  }
 }
 .interesting__question{
   font-family: "blogger","Arial",sans-serif;
@@ -220,5 +223,63 @@
     background-image: url(/source/img/icons/email_int_tab.svg);
     width: 68px;
     height: 68px;
+  }
+}
+@media (min-width: 1440px){
+  .interesting{
+    padding-top: 165px;
+    height: 645px;
+  }
+  .interesting__description{
+    margin-left: 292px;
+    margin-bottom: 60px;
+  }
+  .interesting__wrapper{
+    width: 1174px;
+  }
+  .interesting__form input{
+    width: 850px;
+    margin-bottom: 70px;
+  }
+  .interesting__submit{
+    width: 330px;
+    span{
+      display: inline-block;
+      font-family: "blogger","Arial",sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      color: @basic_blue_light;
+      margin-left: -120px;
+      letter-spacing: 1px;
+    }
+  }
+  .interesting__contact-item{
+    margin: 0;
+    a::before{
+      top: -35px;
+      left: -120px;
+    }
+  }
+  .interesting__contact-list{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 122px;
+    li:first-child{
+      margin-right: 231px;
+    }
+  }
+  .interesting__phone::before{
+    background-image: url(/source/img/icons/phone_int_des.svg);
+    width: 90px;
+    height: 90px;
+  }
+  .interesting__email::before{
+    background-image: url(/source/img/icons/email_int_des.svg);
+    width: 90px;
+    height: 90px;
+  }
+  .interesting__email{
+    letter-spacing: 1.6px;
   }
 }

@@ -123,3 +123,35 @@
     left: 345px;
   }
 }
+@media (min-width: 1440px){
+  .contact-adress__wrapper{
+    padding-top: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 15px;
+  }
+  .adress-rout{
+    width: 285px;
+    height: 45px;
+    margin-left: 147px;
+    margin-top: -8px;
+  }
+  .adress{
+    margin-left: 270px;
+    a{
+      letter-spacing: 1.2px;
+      &::before{
+        background: url(/source/img/icons/map_adress_des.svg) no-repeat;
+        width: 90px;
+        height: 90px;
+        top: -35px;
+        left: -120px;
+      }
+    }
+  }
+  .map{
+    width: 1440px;
+    margin-top: -123px;
+  }
+}
