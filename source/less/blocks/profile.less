@@ -41,3 +41,216 @@
   line-height: 18px;
   color:@basic_blue_light;
 }
+.profile__wrapper{
+  width: 270px;
+  margin: 0 auto;
+  margin-top: 18px;
+}
+.profile__level{
+  display: inline-block;
+  vertical-align: middle;
+  background: url(/source/img/back-img/level-back.svg) no-repeat;
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 18px;
+  strong{
+    margin-top: 20px;
+    margin-right: 1px;
+  }
+  p{
+    margin-top: 7px;
+  }
+}
+.profile__photo{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+.profile__change-photo{
+  font-family: "blogger","Arial",sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: @basic_blue;
+  width: 270px;
+  height: 40px;
+  background: #DFE3F0;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.profile__tags{
+  width: 270px;
+  height: 87px;
+  border: 1px solid #CBCED9;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 32px;
+}
+.my-hashtags{
+  resize: none;
+  width: 218px;
+  height: 36px;
+  background: transparent;
+  border:none;
+  letter-spacing: 0px;
+  opacity: 0.6;
+  font-family: "blogger","Arial",sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 26px 28px 27px 24px;
+}
+.profile__tags-title{
+  position: absolute;
+  top: -23px;
+  left: 50%;
+  width: 74px;
+  letter-spacing: 1px;
+  background: @blue_light;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.profile__transport{
+  width: 270px;
+  height: 61px;
+  position: relative;
+  border: 1px solid #CBCED9;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+.profile__movement-list{
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 128px;
+  margin: 14px auto 0 auto;
+}
+.profile__movement-item{
+  width: 32.25px;
+  height: 32.25px;
+  background: @basic_white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:not(:last-child){
+    margin-right: 0.48px;
+  }
+  img{
+    width: 19px;
+    height: 17px;
+  }
+}
+.profile__transport-title{
+  position: absolute;
+  top: -23px;
+  left: 50%;
+  width: 112px;
+  letter-spacing: 1px;
+  background: @blue_light;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  text-align: center;
+}
+@media (min-width: 768px){
+  .profile{
+    margin-top: 250px;
+  }
+  .profile__wrapper{
+    width: 618px;
+    display: grid;
+    grid-template-areas: "level transport photo"
+                         "change change change"
+                         "tag tag tag";
+    picture{
+      display: flex;
+      justify-self: flex-end;
+    }
+  }
+  .profile__level{
+    grid-area: level;
+  }
+  .profile__photo{
+    grid-area: photo;
+    border-radius: 7px;
+    margin: 0;
+    margin-top: 20px;
+    margin-right: 2px;
+  }
+  .profile__change-photo{
+    grid-area: change;
+    width: 618px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 18px;
+    color: @basic_blue_light;
+    letter-spacing: 2.2px;
+    margin-top: 51px;
+  }
+  .profile__tags{
+    grid-area: tag;
+    width: 616px;
+    height: 92px;
+    margin-top: 52px;
+  }
+  .my-hashtags{
+    width: 538px;
+    height: 32px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 22px;
+    padding-left: 40px;
+    padding-top: 35.7px;
+  }
+  .profile__tags-title{
+    font-size: 20px;
+    line-height: 20px;
+    top: 66px;
+    letter-spacing: 2px;
+  }
+  .profile__transport{
+    grid-area: transport;
+    width: 306px;
+    height: 93px;
+    margin-top: 18px;
+    margin-left: 28px;
+  }
+  .profile__movement-list{
+    width: 176px;
+    margin-top: 26px;
+  }
+  .profile__movement-item{
+    width: 44px;
+    height: 44px;
+    img{
+      width: 23px;
+      height: 22px;
+    }
+  }
+  .profile__transport-title{
+    font-size: 20px;
+    line-height: 20px;
+    top: 67px;
+    letter-spacing: 2px;
+    width: 150px;
+  }
+  .profile__level{
+    margin: 0;
+    margin-top: 20px;
+    width: 94px;
+    height: 94px;
+    display: flex;
+    justify-content: flex-start;
+    background: url(/source/img/icons/Subtract.svg) no-repeat;
+  }
+}

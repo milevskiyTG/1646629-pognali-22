@@ -3,7 +3,10 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
-  color:@basic_blue_light
+  letter-spacing: 1px;
+  color:@basic_blue_light;
+  margin: 0;
+  margin-bottom: 29px;
 }
 .plans__card_title{
   font-family: "blogger","Arial",sans-serif;
@@ -16,20 +19,143 @@
   }
 }
 .amount-traveler,
-.date{
+.date-travel{
   font-family: "blogger","Arial",sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
-  letter-spacing: 6%;
+  letter-spacing: 1px;
   color:@basic_blue_light;
+  text-transform: uppercase;
+  margin: 0;
 }
 .change-plan{
   font-family: "blogger","Arial",sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
-  letter-spacing: 3%;
+  letter-spacing: 1px;
   color:@basic_black;
   opacity: 0.3;
+  background: transparent;
+  border: none;
+  padding: 0;
+  text-transform: uppercase;
+  margin-top: 24px;
+}
+.plans{
+  background: @special_blue_light;
+  height: 430px;
+  padding-top: 28px;
+  margin-top: 34px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.plans__wrapper{
+  width: 270px;
+  margin: 0 auto;
+}
+.plans__list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.plans__card{
+  width: 245px;
+  height: 130px;
+  padding-left: 25px;
+  padding-top: 24px;
+  background: @basic_white;
+  border-radius: 10px;
+  &:not(:last-child){
+    margin-bottom: 10px;
+  }
+}
+.plans__card_title{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  letter-spacing: 0.8px;
+  margin-bottom: 20px;
+  p{
+    margin: 0;
+    margin-right: 3px;
+  }
+}
+.date{
+  margin-top: 5px;
+}
+@media (min-width: 320px){
+  .date-travel{
+    margin-top: 5px;
+  }
+}
+@media (min-width: 768px){
+  .plans{
+    margin-top: 58.5px;
+    padding-top: 57px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 526px;
+  }
+  .plans__wrapper{
+    width: 618px;
+  }
+  .plans__card{
+    width: 578px;
+    height: 128px;
+    padding-left: 40px;
+    display: grid;
+    grid-template-areas: "step step step"
+                         "amount date change";
+  }
+  .plans__card_title{
+    grid-area: step;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 546px;
+    justify-content: space-between;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 1.1px;
+    margin-top: 4px;
+    p{
+      margin: 0;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+  .amount-traveler{
+    grid-area: amount;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2.3px;
+    margin-top: 24px;
+  }
+  .date-travel{
+    grid-area: date;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin-top: 24px;
+  }
+  .change-plan{
+    grid-area: change;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-right: 14px;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+  .long-name{
+    margin-top: 24px;
+    margin-left: -15px;
+  }
+  .plans__title{
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 1.8px;
+    margin-bottom: 48px;
+  }
 }

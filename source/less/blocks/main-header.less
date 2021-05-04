@@ -66,11 +66,45 @@
   font-size: 36px;
   line-height: 36px;
   color:@basic_white;
+  position: relative;
+  margin-top: 58px;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 214px;
+    height: 5px;
+    background: @special_orange;
+    border-radius: 4px;
+    bottom: -13px;
+  }
 }
 .main-header__top{
   display: flex;
   justify-content: space-between;
   padding: 19px 25px 0 25px;
+}
+.header-form .main-header__top{
+  background: @basic_yellow;
+  height: 145px;
+  padding: 0;
+}
+.top-wrapper{
+  display: flex;
+}
+.main-header__top__wrapper{
+  width: 100%;
+  height: 123px;
+  background: @bg_header;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 19px 25px 0 25px;
+}
+.subwrapper{
+  width: 270px;
+  margin: 0 auto;
+}
+.main-header.header-form{
+  height: 147px;
 }
 .main-header__top-title{
   height: 517px;
@@ -192,8 +226,33 @@
   .travel-plan__item:last-child{
     height: 80px;
   }
+  .main-header__top .open-drop-down{
+    margin-left: 147px;
+  }
 }
 @media (min-width: 768px){
+  .header-form{
+    .main-header__tablet-authorization{
+      margin-right: 0;
+    }
+    .main-header__logo{
+      margin-left: 0;
+    }
+  }
+  .top-wrapper{
+    width: 688px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .subwrapper{
+    width: 688px;
+    margin: 0 auto;
+  }
+  .main-header__top__wrapper{
+    height: 330px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
   .main-header{
     height: 1120px;
     background: @bg_blue;
@@ -208,6 +267,17 @@
   .main-header__top-title{
     height: 476px;
     background: none;
+  }
+  .main-header__subtitle{
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 134px;
+    margin-left: 35px;
+    &::before{
+      width: 358px;
+      height: 8px;
+      top: 120px;
+    }
   }
   .author.tab{
     display: inline-block;
@@ -491,5 +561,15 @@
   }
   .travel-plan__descr{
     margin-top: 28px;
+  }
+}
+@media (max-width: 767px){
+  .main-header.header-form{
+    .main-header__user-menu{
+      display: none;
+    }
+    .main-header__tablet-authorization{
+      display: none;
+    }
   }
 }
